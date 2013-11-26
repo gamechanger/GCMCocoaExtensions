@@ -23,6 +23,7 @@
 		AB0A79EC1845343A00ABBBB8 /* NSStringGameChangerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A79D01845316200ABBBB8 /* NSStringGameChangerTests.m */; };
 		AB0A79ED1845393C00ABBBB8 /* NSString+GameChangerMedia.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB0A79D41845318200ABBBB8 /* NSString+GameChangerMedia.h */; };
 		AB0A79F418453FFA00ABBBB8 /* libGCMCocoaExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A79A718452BA400ABBBB8 /* libGCMCocoaExtensions.a */; };
+		AB0A7A0F1845636600ABBBB8 /* GCMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A7A0E1845636600ABBBB8 /* GCMDeviceInfo.m */; };
 		EF8E1C44AF244FF48B227AE8 /* libPods-GCMCocoaExtensionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C973F820EA4AF4928F2F9D /* libPods-GCMCocoaExtensionsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		AB0A79E1184533A300ABBBB8 /* GCMCocoaExtensionsSenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCMCocoaExtensionsSenTests-Info.plist"; sourceTree = "<group>"; };
 		AB0A79E3184533A300ABBBB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB0A79E7184533A300ABBBB8 /* GCMCocoaExtensionsSenTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCMCocoaExtensionsSenTests-Prefix.pch"; sourceTree = "<group>"; };
+		AB0A7A0D1845636600ABBBB8 /* GCMDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMDeviceInfo.h; sourceTree = "<group>"; };
+		AB0A7A0E1845636600ABBBB8 /* GCMDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMDeviceInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 			children = (
 				AB0A79D41845318200ABBBB8 /* NSString+GameChangerMedia.h */,
 				AB0A79D21845317200ABBBB8 /* NSString+GameChangerMedia.m */,
+				AB0A7A0D1845636600ABBBB8 /* GCMDeviceInfo.h */,
+				AB0A7A0E1845636600ABBBB8 /* GCMDeviceInfo.m */,
 				AB0A79AD18452BA400ABBBB8 /* Supporting Files */,
 			);
 			path = GCMCocoaExtensions;
@@ -387,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0A79D31845317200ABBBB8 /* NSString+GameChangerMedia.m in Sources */,
+				AB0A7A0F1845636600ABBBB8 /* GCMDeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

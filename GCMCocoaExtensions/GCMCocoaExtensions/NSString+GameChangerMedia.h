@@ -16,4 +16,6 @@
 - (BOOL)isNotEmptyOrWhitespace;
 - (BOOL)isNotEmptyOrWhitespaceOrNewlines;
 
+- (CGFloat)heightForStringUsingWidth:(CGFloat)width andFont:(UIFont *)font;
+
 @end

@@ -2,7 +2,7 @@ platform :ios, "6.0"
 workspace 'GCMCocoaExtensions'
 xcodeproj 'GCMCocoaExtensions/GCMCocoaExtensions.xcodeproj'
 
-target :GCMCocoaExtensionsTests do
+target :GCMCocoaExtensionsSenTests do
   pod 'Kiwi', '2.2.0'
 end
 

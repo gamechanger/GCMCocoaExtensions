@@ -157,7 +157,6 @@
 			children = (
 				AB0A79D41845318200ABBBB8 /* NSString+GameChangerMedia.h */,
 				AB0A79D21845317200ABBBB8 /* NSString+GameChangerMedia.m */,
-				AB0A79D01845316200ABBBB8 /* NSStringGameChangerTests.m */,
 				AB0A79AD18452BA400ABBBB8 /* Supporting Files */,
 			);
 			path = GCMCocoaExtensions;
@@ -191,6 +190,7 @@
 		AB0A79DF184533A300ABBBB8 /* GCMCocoaExtensionsSenTests */ = {
 			isa = PBXGroup;
 			children = (
+				AB0A79D01845316200ABBBB8 /* NSStringGameChangerTests.m */,
 				AB0A79E0184533A300ABBBB8 /* Supporting Files */,
 			);
 			path = GCMCocoaExtensionsSenTests;

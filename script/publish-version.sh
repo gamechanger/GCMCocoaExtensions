@@ -16,7 +16,7 @@ fi
 
 set -e
 pushd `dirname "${BASH_SOURCE[0]}"`
-ruby generate-podspec.rb $1 > ../GCMNavStackMachine.podspec
+ruby generate-podspec.rb $1 > ../GCMCocoaExtensions.podspec
 git add ../GCMCocoaExtensions.podspec
 git commit -m "Update podspec" || true
 git push origin master

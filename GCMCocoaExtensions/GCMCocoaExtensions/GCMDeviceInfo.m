@@ -14,7 +14,7 @@
   static BOOL retina = NO;
   static BOOL alreadyChecked = NO;
   if (!alreadyChecked) {
-    UIScreen *mainScreen = self.mainScreen;
+    UIScreen *mainScreen = [UIScreen mainScreen];
     if (mainScreen) {
       retina = mainScreen.scale > 1.0;
       alreadyChecked = YES;

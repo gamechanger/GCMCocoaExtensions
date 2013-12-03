@@ -19,4 +19,6 @@
 
 @interface GCMDeviceInfo : NSObject
 
++ (BOOL)isRetinaDisplay;
+
 @end

@@ -10,4 +10,17 @@
 
 @implementation GCMDeviceInfo
 
++ (BOOL)isRetinaDisplay {
+  static BOOL retina = NO;
+  static BOOL alreadyChecked = NO;
+  if (!alreadyChecked) {
+    UIScreen *mainScreen = self.mainScreen;
+    if (mainScreen) {
+      retina = mainScreen.scale > 1.0;
+      alreadyChecked = YES;
+    }
+  }
+  return retina;
+}
+
 @end

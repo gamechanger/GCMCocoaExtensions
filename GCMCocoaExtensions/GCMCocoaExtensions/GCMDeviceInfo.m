@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 GameChanger. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "GCMDeviceInfo.h"
 
 @implementation GCMDeviceInfo

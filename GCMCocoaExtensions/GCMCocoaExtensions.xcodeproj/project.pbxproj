@@ -286,7 +286,7 @@
 				ORGANIZATIONNAME = GameChanger;
 				TargetAttributes = {
 					AB0A79B618452BA400ABBBB8 = {
-						TestTargetID = AB0A79A618452BA400ABBBB8;
+						TestTargetID = AB0A79A618452BA400ABBBB8 /* GCMCocoaExtensions */;
 					};
 				};
 			};

@@ -25,4 +25,5 @@ popd
 git tag -a $1 -m "Create tag"
 git push origin $1
 
+pod push gcspecs GCMCocoaExtensions.podspec
 pod push gc_specs_mirror GCMCocoaExtensions.podspec

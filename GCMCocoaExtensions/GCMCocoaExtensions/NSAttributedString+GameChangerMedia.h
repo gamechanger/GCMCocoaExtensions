@@ -10,9 +10,10 @@
 
 @interface NSAttributedString (GameChangerMedia)
 
-- (CGSize) sizeConstrainedToSize: (CGSize) size;
-- (CGSize) sizeGivenWidth: (CGFloat) width;
-- (CGFloat) integralHeightGivenWidth: (CGFloat) width;
+- (CGSize)sizeConstrainedToSize:(CGSize)size;
+- (CGSize)sizeGivenWidth:(CGFloat)width;
+- (CGSize)integralSizeGivenSize:(CGSize)size;
+- (CGFloat)integralHeightGivenWidth:(CGFloat)width;
 
 @end
 

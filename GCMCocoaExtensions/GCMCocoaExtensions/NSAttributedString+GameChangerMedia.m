@@ -20,6 +20,13 @@
   return [self sizeConstrainedToSize: CGSizeMake(width, CGFLOAT_MAX)];
 }
 
+- (CGSize)integralSizeGivenSize:(CGSize)size {
+  CGSize ret = [self sizeConstrainedToSize:size];
+  ret.width = ceilf(ret.width);
+  ret.height = ceilf(ret.height);
+  return ret;
+}
+
 - (CGFloat) integralHeightGivenWidth:(CGFloat)width {
   return ceilf([self sizeGivenWidth: width].height);
 }

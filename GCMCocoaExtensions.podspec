@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = "GCMCocoaExtensions"
-  s.version      = "0.2.2"
+  s.version      = "0.2.3"
   s.summary      = "Category methods for CocoaTouch classes"
   s.homepage     = "https://github.com/gamechanger/GCMCocoaExtensions"
   s.author       = { "Jerry Hsu" => "jerry.hsu@gamechanger.io" }
-  s.source       = { :git => "https://github.com/gamechanger/GCMCocoaExtensions.git", :tag => "0.2.2" }
+  s.source       = { :git => "https://github.com/gamechanger/GCMCocoaExtensions.git", :tag => "0.2.3" }
   s.source_files = "GCMCocoaExtensions/GCMCocoaExtensions/*.{h,m}"
   s.license = { :type => 'MIT', :type => 'LICENSE' }
   s.requires_arc = true

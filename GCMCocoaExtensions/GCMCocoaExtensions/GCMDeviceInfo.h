@@ -20,5 +20,6 @@
 @interface GCMDeviceInfo : NSObject
 
 + (BOOL)isRetinaDisplay;
++ (BOOL)iPad;
 
 @end

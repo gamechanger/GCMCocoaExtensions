@@ -20,4 +20,5 @@ DerivedData
 #CocoaPods
 Pods
 
+.bundle
 *~

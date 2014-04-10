@@ -14,14 +14,18 @@
 + (BOOL)isRetinaDisplay {
   static BOOL retina = NO;
   static BOOL alreadyChecked = NO;
-  if (!alreadyChecked) {
+  if ( ! alreadyChecked ) {
     UIScreen *mainScreen = [UIScreen mainScreen];
-    if (mainScreen) {
+    if ( mainScreen ) {
       retina = mainScreen.scale > 1.0;
       alreadyChecked = YES;
     }
   }
   return retina;
+}
+
++ (BOOL)iPad {
+  return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
 }
 
 @end

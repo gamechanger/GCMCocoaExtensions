@@ -6,6 +6,7 @@ before_install:
   - rvm get stable
   - rvm install 2.1.0
   - rvm use 2.1.0
+  - echo $PATH
 script: rake test
 cache:
   bundler: true

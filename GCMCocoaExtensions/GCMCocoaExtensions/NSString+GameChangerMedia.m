@@ -36,24 +36,16 @@
 }
 
 - (CGFloat)heightForStringUsingWidth:(CGFloat)width andFont:(UIFont *)font {
+  NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+  paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
 
-    if ( IOS7_OR_GREATER) {
-        NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
-        paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+  CGRect rect = [self boundingRectWithSize:CGSizeMake(width, 9999.f)
+                                   options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine
+                                attributes:@{NSFontAttributeName : font,
+                                             NSParagraphStyleAttributeName : paragraphStyle}
+                                   context:nil];
 
-        CGRect rect = [self boundingRectWithSize:CGSizeMake(width, 9999.f)
-                                         options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine
-                                      attributes:@{NSFontAttributeName : font,
-                                                   NSParagraphStyleAttributeName : paragraphStyle}
-                                         context:nil];
-
-        return ceil(rect.size.height);
-    } else {
-        CGSize size = [self sizeWithFont:font
-                       constrainedToSize:CGSizeMake(width, 9999.f)
-                           lineBreakMode:NSLineBreakByWordWrapping];
-        return ceil(size.height);
-    }
+  return ceil(rect.size.height);
 }
 
 @end

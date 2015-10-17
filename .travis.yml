@@ -13,10 +13,3 @@ cache:
   - Pods
 notifications:
   email: false
-  hipchat:
-    template:
-    - ! '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}
-      (<a href="%{build_url}">Details</a>/<a href="%{compare_url}">Change view</a>)'
-    format: html
-    rooms:
-      secure: CxYZ2catH0yYIb2c50XHokg+QqgOjKe/C6oiNEdg99PTo+8phq6wN0YnSJWLJi1MQIaB+K3LEUNEGpd8H21OoXZsxqcEQRVFTdw7uncHvuwd11e27ce0+d+QuWSqC7r0Q/1Zmj9qVXNMxFwsQZqrct7K5QjmSoyFzFtbXZEmwFI=

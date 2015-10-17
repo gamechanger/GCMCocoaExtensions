@@ -60,7 +60,7 @@
 
 /* Begin PBXFileReference section */
 		0DE4E80FB34140D4B7AAD3D3 /* libPods-GCMCocoaExtensionsSenTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCMCocoaExtensionsSenTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63FC2CFAA7D64A41B74A0645 /* Pods-GCMCocoaExtensionsSenTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCMCocoaExtensionsSenTests.xcconfig"; path = "../Pods/Pods-GCMCocoaExtensionsSenTests.xcconfig"; sourceTree = "<group>"; };
+		887D57BC271715AA9EA77941 /* Pods-GCMCocoaExtensionsSenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCMCocoaExtensionsSenTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GCMCocoaExtensionsSenTests/Pods-GCMCocoaExtensionsSenTests.debug.xcconfig"; sourceTree = "<group>"; };
 		88C973F820EA4AF4928F2F9D /* libPods-GCMCocoaExtensionsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCMCocoaExtensionsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0A79A718452BA400ABBBB8 /* libGCMCocoaExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGCMCocoaExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0A79AA18452BA400ABBBB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,6 +82,7 @@
 		AB0A7A0E1845636600ABBBB8 /* GCMDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMDeviceInfo.m; sourceTree = "<group>"; };
 		AB0A7A2318466E2500ABBBB8 /* NSAttributedString+GameChangerMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+GameChangerMedia.h"; sourceTree = "<group>"; };
 		AB0A7A2418466E2500ABBBB8 /* NSAttributedString+GameChangerMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+GameChangerMedia.m"; sourceTree = "<group>"; };
+		F295BDCB6CF516BE9FC31B58 /* Pods-GCMCocoaExtensionsSenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCMCocoaExtensionsSenTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GCMCocoaExtensionsSenTests/Pods-GCMCocoaExtensionsSenTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EBA3A789C0F8E14A4C5113C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				887D57BC271715AA9EA77941 /* Pods-GCMCocoaExtensionsSenTests.debug.xcconfig */,
+				F295BDCB6CF516BE9FC31B58 /* Pods-GCMCocoaExtensionsSenTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB0A799E18452BA400ABBBB8 = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +139,7 @@
 				AB0A79DF184533A300ABBBB8 /* GCMCocoaExtensionsSenTests */,
 				AB0A79A918452BA400ABBBB8 /* Frameworks */,
 				AB0A79A818452BA400ABBBB8 /* Products */,
-				63FC2CFAA7D64A41B74A0645 /* Pods-GCMCocoaExtensionsSenTests.xcconfig */,
+				4EBA3A789C0F8E14A4C5113C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -274,7 +284,7 @@
 			name = GCMCocoaExtensionsSenTests;
 			productName = GCMCocoaExtensionsSenTests;
 			productReference = AB0A79DB184533A300ABBBB8 /* GCMCocoaExtensionsSenTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -286,7 +296,7 @@
 				ORGANIZATIONNAME = GameChanger;
 				TargetAttributes = {
 					AB0A79B618452BA400ABBBB8 = {
-						TestTargetID = AB0A79A618452BA400ABBBB8 /* GCMCocoaExtensions */;
+						TestTargetID = AB0A79A618452BA400ABBBB8;
 					};
 				};
 			};
@@ -341,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Pods-GCMCocoaExtensionsSenTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GCMCocoaExtensionsSenTests/Pods-GCMCocoaExtensionsSenTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		63159A05C75144CFB504228A /* Check Pods Manifest.lock */ = {
@@ -588,7 +598,7 @@
 		};
 		AB0A79E9184533A300ABBBB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63FC2CFAA7D64A41B74A0645 /* Pods-GCMCocoaExtensionsSenTests.xcconfig */;
+			baseConfigurationReference = 887D57BC271715AA9EA77941 /* Pods-GCMCocoaExtensionsSenTests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -616,7 +626,7 @@
 		};
 		AB0A79EA184533A300ABBBB8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63FC2CFAA7D64A41B74A0645 /* Pods-GCMCocoaExtensionsSenTests.xcconfig */;
+			baseConfigurationReference = F295BDCB6CF516BE9FC31B58 /* Pods-GCMCocoaExtensionsSenTests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
